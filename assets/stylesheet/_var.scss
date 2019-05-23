@@ -1,0 +1,13 @@
+@import"./helper";
+
+$primary-text: (color: #666666,
+  font-size: 14px,
+);
+
+@mixin print-styles($map) {
+
+  @each $property,
+  $value in $map {
+    #{$property}: $value;
+  }
+}

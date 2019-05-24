@@ -44,6 +44,41 @@
           display: block;
           background: #d7e4ed
         }
+
+        .more-info {
+          position: relative;
+
+          .line {
+            content: ' ';
+            position: absolute;
+            left: -39px;
+            z-index: 1;
+            top: 19px;
+            display: block;
+            width: 40px;
+            height: 4px;
+            background: #e46b18;
+          }
+
+          .box-status {
+
+            padding: 10px;
+            display: block;
+            // position: relative;
+
+            &::after {
+              content: ' ';
+              position: absolute;
+              left: -41px;
+              z-index: -1;
+              top: -117px;
+              display: block;
+              width: 4px;
+              height: 100%;
+              background: #e46b18;
+            }
+          }
+        }
       }
     }
   }

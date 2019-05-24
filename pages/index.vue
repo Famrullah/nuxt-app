@@ -5,9 +5,7 @@
         <leftComponent :data="data1" />
       </div>
       <div class="home-page__layout">
-        <div v-for="(item, index) in data2" :key="item[index]">
-          {{ item.status }}
-        </div>
+        <rightComponent :data="data2" />
       </div>
     </div>
   </section>
@@ -17,10 +15,12 @@
 import './index.scss'
 import { data1, data2 } from '../data'
 import leftComponent from './left-component'
+import rightComponent from './right-component'
 
 export default {
   components: {
-    leftComponent
+    leftComponent,
+    rightComponent
   },
   data() {
     return {

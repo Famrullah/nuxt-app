@@ -55,7 +55,7 @@ export const data2 = [
   },
   {
     status: 'sent',
-    photo: '',
+    photo: 'http://demo.powowbox.com/powowbox/avatar_demo/Jane_0001.png',
     first_name: 'Muhammad',
     last_name: 'Soleh',
     message: 'On approve',
